@@ -75,6 +75,36 @@ The current site title includes a heart emoji. While that's charming, it can dis
 
 ---
 
+## Part 3: AI Discoverability
+
+This is newer, but increasingly important. When someone asks ChatGPT, Google Gemini, Siri, or any AI assistant *"best coffee in Honolulu"* or *"where can I get local Hawaiian coffee?"*, the AI pulls its answer from multiple sources. Right now, Downtown Coffee is leaving a lot of those sources empty or incomplete.
+
+### What AI assistants look at when recommending a business
+
+1. **Your website's structured data** — There's a hidden data profile you can add to any website that says: "This is a coffee shop. It's at this address. It serves coffee, espresso, and matcha. It's been open since 2011." AI assistants read this directly. Our proposed improvements already include this — it's the same "CoffeeShop" profile mentioned in Part 2.
+
+2. **Google Business Profile** — This is probably the single most important thing for both Google search *and* AI recommendations. It's free, takes about 15 minutes to set up, and it's where your hours, photos, reviews, and map pin live. If Downtown Coffee doesn't have one yet, this should be priority #1 regardless of anything else we do.
+
+3. **Customer reviews** — Google Reviews, Yelp, and TripAdvisor all feed into what AI assistants recommend. More reviews (and responses to those reviews) = more visibility. This isn't something we change on the website — it's about encouraging happy customers to leave a quick review.
+
+4. **Clear, natural language on the site** — If the website clearly says *"independent coffee roaster in downtown Honolulu specializing in 100% Hawaii-grown coffee,"* an AI can pick that up and use it in a recommendation. If the site is vague or image-heavy with little text, the AI has nothing to work with. Our proposed copy improvements help here.
+
+5. **Mentions on other sites** — Blog posts, local guides, news articles, Reddit threads. When multiple independent sources mention Downtown Coffee, AI assistants treat that as a stronger signal. This is the organic, word-of-mouth side — harder to control, but worth being aware of.
+
+### What we can do right now
+- Add the structured data profile to the website (already in our proposal — free, one-time)
+- Write clear, descriptive copy that reads like a natural answer to "what is this place?"
+- Set up a Google Business Profile if one doesn't exist yet (free, 15 min)
+
+### What helps over time
+- Encouraging Google reviews from satisfied customers
+- Getting mentioned in local Honolulu guides, food blogs, etc.
+- Keeping the Google Business Profile updated with current hours and photos
+
+The bottom line: the same improvements that help with Google search also help with AI recommendations. It's not extra work — it's the same work, with a bonus payoff.
+
+---
+
 ## Summary
 
 | Area | Current State | After Improvements |
@@ -87,6 +117,7 @@ The current site title includes a heart emoji. While that's charming, it can dis
 | Image SEO | No alt text on most images | Descriptive text on every image |
 | Page descriptions | Generic/missing | Unique per page |
 | Contact page URL | `/new-page-1` | `/contact` |
+| AI discoverability | No structured data, no Google Business Profile | Structured data + profile = AI assistants can recommend us |
 
 All proposed changes are **gentle, iterative improvements** — not a redesign. The goal is to make the existing site cleaner, more inviting, and easier for both customers and search engines to navigate.
 
