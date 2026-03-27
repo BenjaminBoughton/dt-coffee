@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downtown Coffee Honolulu | Hawaii Coffee Roaster & Coffeehouse</title>
+  <meta name="description" content="Independent coffee roaster and coffeehouse in downtown Honolulu, Hawaiʻi. 100% Hawaii-grown coffee, roasted fresh every Saturday. Visit us at 900 Fort Street Mall." />
+  <meta name="keywords" content="Hawaii coffee, Kona coffee, Honolulu coffee shop, Hawaii coffee roaster, downtown Honolulu cafe, local coffee Oahu" />
+  <link rel="canonical" href="https://www.dtcoffee.com/" />
+
+  <!-- Open Graph (link previews in iMessage, Slack, social, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.dtcoffee.com/" />
+  <meta property="og:title" content="Downtown Coffee Honolulu | Hawaii Coffee Roaster" />
+  <meta property="og:description" content="100% Hawaii-grown coffee, roasted fresh every Saturday in downtown Honolulu. Shop single-origin Kona, Kaʻu, Maui Mokka, and more." />
+  <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1588702335800-WK83V8K80SAJXR7GU6UW/EC677D9A-0821-4631-AA4A-C34965C506E4.jpeg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Downtown Coffee Honolulu" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Downtown Coffee Honolulu | Hawaii Coffee Roaster" />
+  <meta name="twitter:description" content="100% Hawaii-grown coffee, roasted fresh every Saturday in downtown Honolulu." />
+  <meta name="twitter:image" content="https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1588702335800-WK83V8K80SAJXR7GU6UW/EC677D9A-0821-4631-AA4A-C34965C506E4.jpeg" />
+
+  <!-- JSON-LD: Local Business structured data (Google reads this directly) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CoffeeShop",
+    "name": "Downtown Coffee Honolulu",
+    "url": "https://www.dtcoffee.com",
+    "logo": "https://www.dtcoffee.com/favicon.ico",
+    "image": "https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1588702335800-WK83V8K80SAJXR7GU6UW/EC677D9A-0821-4631-AA4A-C34965C506E4.jpeg",
+    "description": "Independent coffee roaster and coffeehouse in downtown Honolulu specializing in 100% Hawaii-grown coffee since 2011.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "900 Fort Street Mall, Suite 100",
+      "addressLocality": "Honolulu",
+      "addressRegion": "HI",
+      "postalCode": "96813",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 21.3089,
+      "longitude": -157.8589
+    },
+    "sameAs": [
+      "https://www.instagram.com/dtcoffeehonolulu"
+    ],
+    "servesCuisine": ["Coffee", "Espresso", "Matcha"],
+    "priceRange": "$",
+    "foundingDate": "2011",
+    "hasMap": "https://maps.google.com/?q=900+Fort+Street+Mall+Honolulu+HI"
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:    #f7f3ec;
+      --warm:     #ede6d6;
+      --espresso: #2b1d0e;
+      --roast:    #6b3f1e;
+      --gold:     #b5813a;
+      --muted:    #8a7460;
+      --white:    #fdfaf5;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--espresso);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 3rem;
+      height: 64px;
+      background: var(--cream);
+      border-bottom: 1px solid rgba(43,29,14,.1);
+      backdrop-filter: blur(8px);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--espresso);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex; gap: 2rem; list-style: none; align-items: center;
+    }
+    .nav-links a {
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--espresso);
+      text-decoration: none;
+      font-weight: 400;
+      opacity: 0.75;
+      transition: opacity .2s;
+    }
+    .nav-links a:hover { opacity: 1; }
+    .nav-links .shop-link {
+      background: var(--espresso);
+      color: var(--cream);
+      padding: 0.45rem 1rem;
+      border-radius: 2px;
+      opacity: 1;
+      font-weight: 500;
+    }
+    .nav-links .shop-link:hover { background: var(--roast); }
+
+    /* ── HERO ── */
+    .hero {
+      margin-top: 64px;
+      position: relative;
+      height: calc(100vh - 64px);
+      min-height: 540px;
+      display: flex; align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1588702335800-WK83V8K80SAJXR7GU6UW/EC677D9A-0821-4631-AA4A-C34965C506E4.jpeg');
+      background-size: cover;
+      background-position: center 40%;
+      filter: brightness(0.55) saturate(0.8);
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(100deg, rgba(43,29,14,.7) 0%, transparent 70%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 0 5rem;
+      max-width: 640px;
+      animation: fadeUp .9s ease both;
+    }
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 em { font-style: italic; color: #e8c98a; }
+    .hero p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(253,250,245,.8);
+      margin-bottom: 2rem;
+      max-width: 400px;
+      line-height: 1.7;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--espresso);
+      padding: 0.8rem 2rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background .2s, transform .2s;
+    }
+    .btn-primary:hover { background: #c9933f; transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-block;
+      border: 1px solid rgba(253,250,245,.5);
+      color: var(--white);
+      padding: 0.8rem 2rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-decoration: none;
+      border-radius: 2px;
+      margin-left: 1rem;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.1); border-color: white; }
+
+    /* ── STRIP ── */
+    .strip {
+      background: var(--espresso);
+      color: var(--cream);
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    .strip span { color: var(--gold); margin: 0 0.5rem; }
+
+    /* ── SECTION SHARED ── */
+    section { padding: 5rem 3rem; }
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--espresso);
+      margin-bottom: 1.25rem;
+    }
+    .section-title em { font-style: italic; }
+
+    /* ── ABOUT ── */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .about-image {
+      position: relative;
+    }
+    .about-image img {
+      width: 100%; height: 520px;
+      object-fit: cover;
+      border-radius: 3px;
+      display: block;
+    }
+    .about-image-accent {
+      position: absolute;
+      width: 55%; height: 55%;
+      bottom: -2rem; right: -2rem;
+      border: 2px solid var(--gold);
+      border-radius: 3px;
+      z-index: -1;
+    }
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-weight: 300;
+      font-size: 1.05rem;
+    }
+    .about-facts {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .fact { border-left: 2px solid var(--gold); padding-left: 1rem; }
+    .fact-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem; font-weight: 300;
+      color: var(--espresso);
+    }
+    .fact-label { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.08em; }
+
+    /* ── DIVIDER ── */
+    .divider { height: 1px; background: rgba(43,29,14,.1); margin: 0 3rem; }
+
+    /* ── SHOP ── */
+    .shop-section { background: var(--white); }
+    .shop-header {
+      max-width: 1200px; margin: 0 auto 3rem;
+      display: flex; justify-content: space-between; align-items: flex-end;
+    }
+    .shop-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: var(--cream);
+      border-radius: 3px;
+      overflow: hidden;
+      transition: transform .25s, box-shadow .25s;
+      cursor: pointer;
+    }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(43,29,14,.12); }
+    .product-img {
+      width: 100%; height: 220px;
+      object-fit: cover; display: block;
+      transition: transform .4s;
+    }
+    .product-card:hover .product-img { transform: scale(1.04); }
+    .product-img-wrap { overflow: hidden; }
+    .product-info { padding: 1.25rem 1.5rem 1.5rem; }
+    .product-tag {
+      font-size: 0.65rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 0.35rem;
+    }
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 400;
+      margin-bottom: 0.25rem;
+    }
+    .product-desc {
+      font-size: 0.82rem; color: var(--muted);
+      font-weight: 300; line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .product-footer {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .product-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem; font-weight: 400;
+    }
+    .product-buy {
+      font-size: 0.7rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--roast);
+      text-decoration: none; font-weight: 500;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 1px;
+      transition: color .2s;
+    }
+    .product-buy:hover { color: var(--gold); }
+
+    /* ── VISIT ── */
+    .visit {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0; max-width: 100%;
+    }
+    .visit-map {
+      background: #d6cec4;
+      min-height: 420px;
+      position: relative; overflow: hidden;
+    }
+    .visit-map img {
+      width: 100%; height: 100%; object-fit: cover; opacity: .9;
+    }
+    .visit-info {
+      background: var(--espresso);
+      color: var(--cream);
+      padding: 5rem 4rem;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .visit-info .section-title { color: var(--white); }
+    .visit-info .section-label { color: var(--gold); }
+    .visit-detail { margin-bottom: 2rem; }
+    .visit-detail-label {
+      font-size: 0.65rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+    .visit-detail p { font-weight: 300; font-size: 1rem; color: rgba(247,243,236,.85); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--espresso);
+      color: var(--cream);
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 300;
+      letter-spacing: 0.05em;
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-center { text-align: center; font-size: 0.75rem; color: var(--muted); }
+    .footer-social {
+      display: flex; gap: 1.5rem; justify-content: flex-end;
+      list-style: none;
+    }
+    .footer-social a {
+      font-size: 0.7rem; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted);
+      text-decoration: none; transition: color .2s;
+    }
+    .footer-social a:hover { color: var(--gold); }
+
+    /* ── PROPOSAL BANNER ── */
+    .proposal-banner {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 999;
+      background: var(--espresso);
+      color: var(--cream);
+      padding: 1rem 1.5rem;
+      border-radius: 4px;
+      border-left: 3px solid var(--gold);
+      font-size: 0.75rem;
+      max-width: 260px;
+      line-height: 1.5;
+      box-shadow: 0 8px 32px rgba(0,0,0,.25);
+    }
+    .proposal-banner strong { color: var(--gold); display: block; margin-bottom: 0.25rem; font-size: 0.8rem; }
+    .proposal-banner button {
+      margin-top: .75rem;
+      background: none; border: 1px solid rgba(255,255,255,.2);
+      color: var(--cream); font-size: 0.7rem; padding: 0.3rem 0.75rem;
+      border-radius: 2px; cursor: pointer; width: 100%;
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .proposal-banner button:hover { background: rgba(255,255,255,.08); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Downtown <span>Coffee</span></a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#visit">Visit</a></li>
+    <li><a href="#visit">Contact</a></li>
+    <li><a class="shop-link" href="#shop">Order Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Honolulu, Hawaiʻi · Est. 2011</p>
+    <h1>Roasted with <em>Aloha</em></h1>
+    <p>100% Hawaii-grown coffee, roasted fresh every Saturday morning at 900 Fort Street Mall.</p>
+    <a href="#shop" class="btn-primary">Shop Coffee</a>
+    <a href="#about" class="btn-ghost">Our Story</a>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  Free local pickup <span>·</span> Hawaii-grown beans only <span>·</span> Roasted every Saturday
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about">
+    <div class="about-image">
+      <img src="https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1588702332363-6L2OKRMLTSVGP5T5V6M1/FEF48159-A3BB-43A3-9770-4BA3BD8D4FDE.jpeg" alt="Downtown Coffee interior" />
+      <div class="about-image-accent"></div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">Our Story</p>
+      <h2 class="section-title">Small batch.<br><em>Big island heart.</em></h2>
+      <p>We are an independent coffee roaster and coffeehouse in downtown Honolulu. Since 2011, we've specialized in sourcing and roasting coffee grown right here in Hawaii — bringing out the sweetness, origin character, and varietal nuance of each bean.</p>
+      <p>We serve 100% Hawaii coffee and espresso, Japanese matcha, matcha tortes, and fresh pastries. Every cup is a taste of the islands.</p>
+      <p>— Fred, Fumiko, Jon, Alyssa, Kaya & Karol</p>
+      <div class="about-facts">
+        <div class="fact">
+          <div class="fact-num">14+</div>
+          <div class="fact-label">Years roasting</div>
+        </div>
+        <div class="fact">
+          <div class="fact-num">100%</div>
+          <div class="fact-label">Hawaii-grown beans</div>
+        </div>
+        <div class="fact">
+          <div class="fact-num">Every</div>
+          <div class="fact-label">Saturday roast day</div>
+        </div>
+        <div class="fact">
+          <div class="fact-num">Oahu</div>
+          <div class="fact-label">Locally owned</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SHOP -->
+<section id="shop" class="shop-section">
+  <div class="shop-header">
+    <div>
+      <p class="section-label">The Roastery</p>
+      <h2 class="section-title">Shop <em>Hawaii Coffee</em></h2>
+    </div>
+    <a href="https://www.dtcoffee.com/shop" class="btn-primary" style="background:var(--espresso);color:var(--cream);">View All Coffees</a>
+  </div>
+  <div class="shop-grid">
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1774054856828-M3V1KIJK7B293VM5ZH02/4EF161ED-A628-4C8A-B83E-20ADBCC1931E.jpeg" alt="Downtown Blend medium roast Hawaii coffee" />
+      </div>
+      <div class="product-info">
+        <p class="product-tag">Medium Roast · Blend</p>
+        <p class="product-name">Downtown Blend</p>
+        <p class="product-desc">[Add your own description] Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+        <div class="product-footer">
+          <span class="product-price">from $13.50</span>
+          <a href="https://www.dtcoffee.com/shop/downtown-blend" class="product-buy">Order →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1774052868645-WBOGXK9MZUUNACVODT91/51D83B73-2AE1-4DA7-928E-0FA2DFD06AAF.jpeg" alt="Mokka single origin Hawaii coffee" />
+      </div>
+      <div class="product-info">
+        <p class="product-tag">Medium Roast · Single Origin</p>
+        <p class="product-name">Maui Mokka</p>
+        <p class="product-desc">[Add your own description] Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+        <div class="product-footer">
+          <span class="product-price">from $15.00</span>
+          <a href="https://www.dtcoffee.com/shop/maui-mokka" class="product-buy">Order →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1497726503262-AX8JY7OTU3VS8P52AWM4/IMG_7762.jpg" alt="100% Kona Coffee single origin Hawaii light roast" />
+      </div>
+      <div class="product-info">
+        <p class="product-tag">Light–Medium · Single Origin</p>
+        <p class="product-name">100% Kona Coffee</p>
+        <p class="product-desc">[Add your own description] Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+        <div class="product-footer">
+          <span class="product-price">from $19.00</span>
+          <a href="https://www.dtcoffee.com/shop/kona-fancy-8zswr-gmfr3" class="product-buy">Order →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1497726227810-W6XQ2170WUEG86BIJWHS/IMG_7758.jpg" alt="Kaʻu single origin Hawaii light roast coffee Big Island" />
+      </div>
+      <div class="product-info">
+        <p class="product-tag">Light Roast · Single Origin</p>
+        <p class="product-name">Kaʻu</p>
+        <p class="product-desc">[Add your own description] Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+        <div class="product-footer">
+          <span class="product-price">from $19.00</span>
+          <a href="https://www.dtcoffee.com/shop/kau" class="product-buy">Order →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- VISIT -->
+<section id="visit" style="padding:0;">
+  <div class="visit">
+    <div class="visit-map">
+      <img src="https://images.squarespace-cdn.com/content/v1/540e2c3be4b0e71908ad1732/1588702332363-6L2OKRMLTSVGP5T5V6M1/FEF48159-A3BB-43A3-9770-4BA3BD8D4FDE.jpeg" alt="The cafe" style="width:100%;height:100%;object-fit:cover;" />
+    </div>
+    <div class="visit-info">
+      <p class="section-label">Find Us</p>
+      <h2 class="section-title" style="color:var(--white);">Come say <em>Aloha</em></h2>
+      <div class="visit-detail">
+        <p class="visit-detail-label">Address</p>
+        <p>900 Fort Street Mall, Suite 100<br>Honolulu, HI 96813</p>
+      </div>
+      <div class="visit-detail">
+        <p class="visit-detail-label">Roast Day</p>
+        <p>Every Saturday morning</p>
+      </div>
+      <div class="visit-detail">
+        <p class="visit-detail-label">Contact</p>
+        <p>Use our <a href="https://www.dtcoffee.com/new-page-1" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);">contact form</a></p>
+      </div>
+      <a href="https://maps.google.com/?q=900+Fort+Street+Mall+Honolulu+HI" class="btn-primary" style="margin-top:1rem; display:inline-block;">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Downtown <span>Coffee</span><br><small style="font-family:'DM Sans';font-size:.7rem;opacity:.5;letter-spacing:.08em;text-transform:uppercase;">Honolulu, Hawaiʻi · Est. 2011</small></div>
+  <div class="footer-center">© 2025 Downtown Coffee Honolulu<br>All rights reserved.</div>
+  <ul class="footer-social">
+    <li><a href="https://www.instagram.com/dtcoffeehonolulu">Instagram</a></li>
+    <li><a href="https://www.dtcoffee.com/shop">Shop</a></li>
+    <li><a href="https://www.dtcoffee.com/shipping-information">Shipping</a></li>
+  </ul>
+</footer>
+
+<!-- PROPOSAL BADGE -->
+<div class="proposal-banner" id="badge">
+  <strong>📋 Design Proposal</strong>
+  This is a visual mock-up of proposed tweaks — no live changes made. Font, nav, hero, and product cards updated.
+  <button onclick="document.getElementById('badge').remove()">Dismiss</button>
+</div>
+
+</body>
+</html>
