@@ -427,6 +427,88 @@
       from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
     }
+
+    /* ── MOBILE HAMBURGER ── */
+    .nav-toggle {
+      display: none;
+      background: none; border: none; cursor: pointer;
+      flex-direction: column; gap: 5px;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      display: block; width: 22px; height: 2px;
+      background: var(--espresso); border-radius: 1px;
+      transition: transform .3s, opacity .3s;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+
+      /* Nav */
+      nav { padding: 0 1.5rem; }
+      .nav-toggle { display: flex; }
+      .nav-links {
+        display: none;
+        position: absolute; top: 64px; left: 0; right: 0;
+        flex-direction: column;
+        background: var(--cream);
+        border-bottom: 1px solid rgba(43,29,14,.1);
+        padding: 1.5rem;
+        gap: 1.25rem;
+        box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { font-size: 0.85rem; opacity: 1; }
+      .nav-links .shop-link { text-align: center; }
+
+      /* Hero */
+      .hero { min-height: 480px; }
+      .hero-content { padding: 0 1.5rem; max-width: 100%; }
+      .hero h1 { font-size: 2.4rem; }
+      .hero p { font-size: 0.95rem; }
+      .btn-primary, .btn-ghost { padding: 0.7rem 1.5rem; font-size: 0.75rem; }
+      .btn-ghost { margin-left: 0; margin-top: 0.75rem; display: block; text-align: center; }
+      .btn-primary { display: block; text-align: center; }
+
+      /* Strip */
+      .strip { font-size: 0.65rem; padding: 0.75rem 1rem; letter-spacing: 0.08em; }
+
+      /* Sections */
+      section { padding: 3rem 1.5rem; }
+      .divider { margin: 0 1.5rem; }
+
+      /* About */
+      .about { grid-template-columns: 1fr; gap: 2rem; }
+      .about-image img { height: 300px; }
+      .about-image-accent { display: none; }
+      .about-facts { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .fact-num { font-size: 1.8rem; }
+
+      /* Shop */
+      .shop-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .shop-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .product-img { height: 200px; }
+
+      /* Visit */
+      .visit { grid-template-columns: 1fr; }
+      .visit-map { min-height: 250px; }
+      .visit-info { padding: 2.5rem 1.5rem; }
+
+      /* Footer */
+      footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+      }
+      .footer-social { justify-content: center; }
+
+      /* Proposal banner */
+      .proposal-banner {
+        bottom: 1rem; right: 1rem; left: 1rem;
+        max-width: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -434,6 +516,9 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#">Downtown <span>Coffee</span></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="#">Home</a></li>
     <li><a href="#about">About</a></li>
